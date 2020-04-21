@@ -24,8 +24,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>    <!--Defines how many rows this grid has-->
-
-        <Grid Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="30,30,30,30"> <!--Creates another grid for the maze part-->
+        <Grid Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="4" Margin="30,30,30,30">
+            <!--Creates another grid for the maze part-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -95,15 +95,11 @@
             <Label x:Name="_6_5" Grid.Row="6" Grid.Column="5" Background="White"/>
             <Label x:Name="_6_6" Grid.Row="6" Grid.Column="6" Background="White"/>
         </Grid>
-
         <Button Grid.Column="5" Grid.Row="6" Width="30" Height="30" Content="?" Click="Button_Click"/>
-
         <!--Creates a little text block above the black textblock-->
         <TextBlock Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">Descriptive/Action text</TextBlock>
-        
         <!--Creates a black TextBox where main text is created-->
         <TextBlock x:Name="TextBlock" Grid.Row="4" Grid.Column="1" Background="Black" Grid.ColumnSpan="4" Foreground="White"/>
-
         <Grid Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="0,44,0,37"> <!--Creates another Grid but only for buttons-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
